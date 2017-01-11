@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head >
-        <title>{{site.title}}</title>
+        <title>{{page.title}} / {{site.title}}</title>
         {% include head.html %}
      
     </head>
@@ -11,7 +11,17 @@
     {% include header.html %}
     </header>
     <body>
-       {{ content }}
+{% for page in site.pages %}
+        {{ page.title }}
+{% endfor %}
+
+{% for post in site.posts %}
+    <li>
+    {{ post.content }}
+    </li>
+{% endfor %}
+        
+
     </body>
     <footer> 
     {% include footer.html %}
