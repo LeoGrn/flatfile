@@ -1,3 +1,13 @@
+---
 title: Flatfile
+timezone: UTC
 collections:
-- my_collection
+  my_collection:
+    title: My Collection
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true

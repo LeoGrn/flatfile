@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout : pages
+layout: pages
 ---
 
 hell yeah 
